@@ -5,13 +5,12 @@
   "main": "index.jsx",
   "browserList": ">0.25%, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open",
-    "server": "nodemon src/server index"
+    "client": "webpack-dev-server --mode development --open",
+    "server": "nodemon src/server index",
+    "start": "concurrently \"npm run client\" \"npm run server\""
   },
-  "proxy": "http://localhost:7000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grisatkac/testForm.git"
@@ -32,6 +31,7 @@
   "dependencies": {
     "arui-feather": "^17.1.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -47,6 +47,7 @@
     "@babel/preset-typescript": "^7.8.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.1.0",
     "html-webpack-plugin": "^3.2.0",

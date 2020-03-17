@@ -10,10 +10,10 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-        const response = await fetch('/test', {
-            method: 'GET',
-            mode: 'no-cors',
-        });
+        const response = await fetch('http://localhost:7000/test', {
+          method: 'GET',
+          mode: 'cors',
+      });
         
         const result = await response.json();
         setTimeout(() => {

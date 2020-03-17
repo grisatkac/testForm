@@ -34,11 +34,11 @@ class FormArea extends Component {
             loading: true,
         });
         
-        const response = await fetch('/test', {
+        const response = await fetch('http://localhost:7000/test', {
             method: 'post',
             body: JSON.stringify(this.requestObject()),
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
             }
         })
 
