@@ -1,0 +1,27 @@
+{
+    "title": "отправить форму",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAA1BMVEUCe3bRU52AAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABODcYhAAEl463hAAAAAElFTkSuQmCC",
+    "fields": [
+        {
+            "title": "сумма денег",
+            "name": "amount of money",
+            "type": "NUMERIC"
+        },
+        {
+            "title": "имя",
+            "name": "name",
+            "type": "TEXT"
+        },
+        {
+            "title": "валюта",
+            "name": "currency",
+            "type": "LIST",
+            "values": {
+                "none": "Не выбрано",
+                "value1": "BYN",
+                "value2": "EUR",
+                "value3": "USA"
+            }
+        }
+    ]
+}
