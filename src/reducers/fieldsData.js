@@ -23,7 +23,6 @@ const fieldsData = (state = arr, { value, name, type }) => {
         default:
             return state;
     }
-
 }
 
 export default fieldsData;
