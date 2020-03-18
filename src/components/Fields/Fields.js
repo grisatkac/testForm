@@ -30,7 +30,6 @@ class Fields extends Component {
                 }
 
                 return (
-
                     <SelectField 
                         options={options}
                         name={name}
